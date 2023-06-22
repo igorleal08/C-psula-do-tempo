@@ -17,8 +17,8 @@ app.register(require('@fastify/static'), {
   prefix: '/uploads',
 })
 app.register(authRoutes)
-app.register(memoriesRoutes)
 app.register(uploadRoutes)
+app.register(memoriesRoutes)
 
 app.register(cors, {
   origin: true,
